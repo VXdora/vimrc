@@ -3,9 +3,13 @@
 cp .vimrc ~
 
 # vim settings
+cp -r colors ~/.vim
+cp -r settings ~/.vim
+
+# vim plugins
 git clone https://github.com/itchyny/lightline.vim ~/.vim/pack/plugins/start/lightline
-git clone https://github.com/lambdalisue/fern.vim ./pack/vendor/start/fern
-git clone https://github.com/cohama/lexima.vim ./pack/vendor/start/lexima
+git clone https://github.com/lambdalisue/fern.vim ~/.vim/pack/vendor/start/fern
+git clone https://github.com/cohama/lexima.vim ~/.vim/pack/vendor/start/lexima
 
 # bashrc
 echo "alias ls='ls -al'" >> ~/.bashrc
